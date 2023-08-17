@@ -13,6 +13,9 @@ int Exit = 0;
 int FirstNumber = 0;
 int SecondNumber = 0;
 int Result = 0;
+int ResultAddition = 0;
+int ResultSubtraction = 0;
+int ResultMultiplication = 0;
 
 float FirstNumberDivision = 0;
 float SecondNumberDivision = 0;
@@ -38,6 +41,13 @@ cin >> FirstNumber;
 cout << "What is Your Second Number" << QuestionMark << endl;
 cin >> SecondNumber;
 
+FirstNumberDivision = FirstNumber;
+SecondNumberDivision = SecondNumber;
+ResultAddition = (FirstNumber + SecondNumber);
+ResultSubtraction = (FirstNumber - SecondNumber);
+ResultMultiplication = (FirstNumber * SecondNumber);
+ResultDivision = (FirstNumberDivision / SecondNumberDivision);
+
 cout << "What Operation Would You Like To Perform" << QuestionMark << endl;
 cin >> Operation;
 
@@ -52,40 +62,28 @@ Division = "Division";
 QuestionMark = "";
 
 if (Operation == addition) {
-Result = (FirstNumber + SecondNumber);
-cout << "Your Result Is: " << Result << endl;
-}
+cout << "Your Result Is: " << ResultAddition << endl; }
 
 if (Operation == Addition) {
-Result = (FirstNumber + SecondNumber);
-cout << "Your Result Is: " << Result << endl;
-}
+cout << "Your Result Is: " << ResultAddition << endl; }
 
 if (Operation == subtraction) {
-Result = (FirstNumber - SecondNumber);
-cout << "Your Result Is: " << Result << endl;
-}
+cout << "Your Result Is: " << ResultSubtraction << endl; }
 
 if (Operation == Subtraction) {
-Result = (FirstNumber - SecondNumber);
-cout << "Your Result Is: " << Result << endl; }
+cout << "Your Result Is: " << ResultSubtraction << endl; }
 
 if (Operation == multiplication) {
-Result = (FirstNumber * SecondNumber);
-cout << "Your Result Is: " << Result << endl;
-}
+cout << "Your Result Is: " << ResultMultiplication << endl; }
 
 if (Operation == Multiplication) {
-Result = (FirstNumber * SecondNumber);
-cout << "Your Result Is: " << Result << endl;
-}
+cout << "Your Result Is: " << ResultMultiplication << endl; }
 
+if (Operation == division) {
+cout << "Your Result Is: " << ResultDivision << endl; }
 
-
-
-
-
-
+if (Operation == Division) {
+cout << "Your Result Is: " << ResultDivision << endl; }
 
 ExitYesOrNo = "Exit";
 QuestionMark = "?";
